@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: lightgrey;
+            padding: 8rem 2rem;
+        }
+        button{
+            margin: 1rem;
+            padding: 1.8rem 1.5rem;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: aqua;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: lightblue;
+        }
+        .container2{
+            height: 150vh;
+            width: 100%;
+            background-color: lightgreen;
+        }
+        .container3{
+            height: 100vh;
+            width: 100%;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body onscroll="hello()">
+    <div class="container">
+        <button onclick="myfun()">single click</button>
+    <button ondblclick="myfun2()">double click</button>
+    <button oncontextmenu="myfun3()">right click</button>
+    <button onmouseover="">mouse over</button>
+    <button onmouseout="">mouse out</button>
+    </div>
+    <div class="container2">
+
+    </div>
+    <div class="container3">
+
+    </div>
+    <script>
+        function myfun(){
+            alert("button clicked");
+        }
+        function myfun2(){
+            alert("button double clicked");
+        }
+        function myfun3(){
+            alert("right click");
+        }
+        function myfun4(){
+            alert("mouse over");
+        }
+        function myfun5(){
+            alert("mouse out");
+        }
+        function hello(){
+            alert("scrolling");
+        }
+    </script>
+</body>
+</html>
