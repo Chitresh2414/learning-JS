@@ -13,7 +13,8 @@ console.log(num);//firat index add iteams
 num.reverse();
 console.log(num);//reverse the arrya 
 num.splice(0,2)
-console.log(num);
+console.log(num);//remove index 0 2 
+
 
 
 
